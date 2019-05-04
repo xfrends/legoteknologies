@@ -1,0 +1,41 @@
+<section>
+    <div class="bg" style="background-image: url('../assets/portfol.jpg');">
+        <div class="mx-auto">
+            <br><br><br><br><br><br>
+            <h1 class="my-5 col-md-9 mx-auto caption2 text-center">
+                Do you want to know our portfolio?
+            </h1><br>
+            <div class="d-flex justify-content-center"><br>
+                <a (click)="scrollTo($event)">
+                    <div class="mb-5 btn btn-outline-primary caption1">View our Work</div>
+                </a>
+            </div><br><br><br>
+        </div>
+    </div>
+    <div class="container my-3" id="portfol">
+        <h2 class="mt-5">Our Portfolio</h2><br>
+        <div class="row">
+            <div class="col-md-6 my-3" *ngFor="let content of portfolio; let i=index">
+                <div class="card">
+                    <div class="hovereffect">
+                        <img class="img-responsive" [src]="content.urlImage" alt="">
+                        <a href="{{content.urlWebsite}}">
+                            <div class="overlay">
+                                <p>See Website</p>
+                                <h2 class="p-5">
+                                    <a href="{{content.urlWebsite}}">Click Here</a>
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <a href="{{content.urlWebsite}}">
+                            <h4 class="card-title">{{content.title}}</h4>
+                        </a>
+                        <p class="card-text">{{content.desc}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,22 @@
+{
+    "carousel": [
+        {
+            "_id": "5ba209902e83b252ddcd3ff1",
+            "title": "xfrends.com",
+            "subTitle": "frendi triarista",
+            "urlImage": "/src/assets/navbar1.jpg",
+            "createdAt": "2018-09-19T08:32:16.253Z",
+            "updatedAt": "2018-09-19T08:32:16.253Z",
+            "__v": 0
+        },
+        {
+            "_id": "5ba2099b2e83b252ddcd3ff2",
+            "title": "judul api kedua saya",
+            "subTitle": "sub judul pertama saya",
+            "urlImage": "/assets/navbar2.jpg",
+            "createdAt": "2018-09-19T08:32:27.856Z",
+            "updatedAt": "2018-09-19T08:32:27.856Z",
+            "__v": 0
+        }
+    ]
+}

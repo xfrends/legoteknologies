@@ -1,0 +1,26 @@
+.unique-color-dark {
+    background-color: #040035 !important;
+    color: white;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+a:hover {
+    color: #7e8bff;
+}
+
+h6.courgette {
+    font-family: 'Courgette', cursive;
+    font-size: 17pt;
+    color: #ffef00;
+    padding-top: 5px;
+}
+p {
+    font-size: small;
+}
+.footer-copyright.text-center.py-3 {
+    font-size: small;
+}

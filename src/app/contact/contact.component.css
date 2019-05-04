@@ -1,0 +1,64 @@
+.caption {
+    color: #0a0180;
+    animation-name: slide;
+    animation-duration: 3s;
+}
+@keyframes slide {
+    0%   {right: -50%; color: transparent; }
+    100% {right: 0%; color: #0a0180;}
+}
+h1, .h1 {
+    text-align: right;
+    font-variant-caps: petite-caps;
+}
+h2, .h2 {
+    font-variant-caps: all-petite-caps;
+    color: #0a0180;
+    font-size: 30pt;
+}
+@media (max-width:720px) {
+    h1, .h1 {
+        font-size: 20pt;
+        text-align: center;
+        font-variant-caps: petite-caps;
+    }
+    h2, .h2 {
+        font-variant-caps: all-petite-caps;
+        font-weight: bold;
+        color: #0a0180;
+        font-size: 20pt;
+    }
+}
+.bg {
+    /* Full height */
+    /* height: 100%;  */
+    width: 100%!important;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -1px -1px 13px rgb(6, 0, 58);
+}
+a {
+    color: black;
+}
+.card {
+    box-shadow: 1px 5px 13px rgb(6, 0, 58);
+}
+iframe{
+    box-shadow: 1px 5px 13px rgb(6, 0, 58);
+}
+
+@media (min-width:1367px) {
+    .bg {
+        /* Full height */
+        max-height: 768px;
+        width: 100%!important;
+    
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: -1px -1px 13px rgb(6, 0, 58);
+    }
+}

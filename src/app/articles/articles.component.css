@@ -1,0 +1,58 @@
+h1.header {
+    color: darkgray;
+    font-size: 6vw;
+    font-weight: bold;
+    border: black;
+    text-shadow: 2px 3px 5px #3a3a3a;
+    animation-name: header;
+    animation-duration: 3s;
+}
+@keyframes header {
+    0%   {top:-100%; color: transparent; }
+    100% {top: 0%; color: darkgray;}
+}
+.card {
+    box-shadow: 0px 2px 5px #1c3380;
+    animation-name: card;
+    animation-duration: 3s;
+}
+@keyframes card {
+    0%   {right: -100%; background-color: transparent; }
+    100% {right: 0%; background-color: #ffffff;}
+}
+.media.border.p-3 {
+    box-shadow: 2px 3px 3px #1c3380;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    vertical-align: middle;
+}
+.img-overlay{
+    position: relative;
+    /* height: 220px; */
+    width: 400px;
+}
+.list {
+    box-shadow: 2px 3px 3px #1c3380;
+}
+img.title.rounded-circle {
+    width: 100px;
+}
+img.rounded {
+    width: 200px;
+}
+@media (max-width:400px) {
+    /* img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        vertical-align: middle;
+    } */
+    .img-overlay {
+        position: relative;
+        height: 220px;
+        width: 293px;
+    }
+}

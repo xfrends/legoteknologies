@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lego Teknologies</title>
+    <base href="/">
+    <meta property="og:url" content="http://www.xfrends.com" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Xfrends Article" />
+    <meta property="og:description" content="How to get web promotion for your bussines?" />
+    <meta property="og:image" content="assets/mylogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/legoteknologies1.png">
+    <!-- loader -->
+    <style>
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+        }
+        
+        .preloader .loading {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font: 14px arial;
+        }
+    </style>
+    <script>
+        function myFunction() {
+            var element = document.getElementById("loading");
+            element.classList.remove("show");
+            element.style.display = "none";
+        }
+    </script>
+    <!-- end loader -->
+</head>
+
+<body onload="myFunction()">
+    <!-- LightWidget WIDGET -->
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+    <div class="preloader" id="loading">
+        <div class="loading">
+            <img src="assets/loading2.gif" width="80">
+        </div>
+    </div>
+    <app-root></app-root>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAfStWcq3FRrT7fFnvVZ8rPPHYx_d2P1Qk",
+            authDomain: "xfrends-12.firebaseapp.com",
+            databaseURL: "https://xfrends-12.firebaseio.com",
+            projectId: "xfrends-12",
+            storageBucket: "xfrends-12.appspot.com",
+            messagingSenderId: "726818629340"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <!-- Chatra {literal} -->
+    <script>
+        (function(d, w, c) {
+            w.ChatraID = 'tvFex9yCoLHyHaoPZ';
+            var s = d.createElement('script');
+            w[c] = w[c] || function() {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            s.async = true;
+            s.src = 'https://call.chatra.io/chatra.js';
+            if (d.head) d.head.appendChild(s);
+        })(document, window, 'Chatra');
+    </script>
+    <!-- /Chatra {/literal} -->
+</body>
+
+</html>

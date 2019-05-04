@@ -1,0 +1,66 @@
+<section>
+    <h1 class="ml-5 mt-4 header">xfrends article</h1>
+    <div class="container mb-3">
+        <div class="flex-row row">
+            <div class="p-2 mx-2 flex-fill card">
+                <div class="img-overlay mx-auto">
+                    <img src="../assets/education.jpg" alt="Education">
+                </div>
+            </div>
+            <div class="flex-fill mx-2">
+                <div class="media border p-3">
+                    <img src="../assets/tutor.jpg" class="title rounded-circle mr-3">
+                    <div class="media-body">
+                        <h4>Tutorial </h4>
+                        <p>how to make and how to use new technology</p>
+                    </div>
+                </div>
+                <div class="media border p-3">
+                    <img src="../assets/tips.jpg" class="title rounded-circle mr-3">
+                    <div class="media-body">
+                        <h4>Tips and Tricks </h4>
+                        <p>Presents various references and advice on technology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-row-reverse row mt-3">
+            <div class="p-2 mx-2 flex-fill card">
+                <div class="img-overlay mx-auto">
+                    <img src="../assets/artikel.jpg" alt="cumming soon">
+                </div>
+            </div>
+            <div class="flex-fill mx-2">
+                <div class="media border p-3">
+                    <img src="../assets/news.jpg" class="title rounded-circle mr-3">
+                    <div class="media-body">
+                        <h4>News </h4>
+                        <p>Various news about the latest technology in Indonesia</p>
+                    </div>
+                </div>
+                <div class="media border p-3">
+                    <img src="../assets/information.jpg" class="title rounded-circle mr-3">
+                    <div class="media-body">
+                        <h4>Information </h4>
+                        <p>Various information related to technology and information</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- start list artikel -->
+        <div class="mt-4 list" 
+            *ngFor="let article of articles | orderBy: order">
+                <div class="row">
+                <div class="col-sm-4"><a href="#" class=""><img [src]="article.urlImage" class="img-responsive"></a>
+                </div>
+                <div class="col-sm-8">
+                    <h3 class="title">{{article.title}}</h3>
+                    <p class="text-muted"><span class="fa fa-calendar"></span>&nbsp;{{article.createdAt}}</p>
+                    <p>{{article.desc}}</p>
+                    <p class="text-muted">Presented by <a routerLink="/about">{{article.postBy}}</a></p>
+                </div>
+            </div>
+        </div>        
+        <!-- end list artikel -->
+    </div>
+</section>

@@ -1,0 +1,42 @@
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide *ngFor="let image of slide; let i = index">
+        <div class="img-overlay">
+            <img [src]="image.urlImage" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+            <h3>{{image.title}}</h3>
+            <hr class="ml-5">
+            <p>{{image.subTitle}}</p>
+            <a type="button" [routerLink]="['/contact']" class="btn btn-outline-primary">{{image.button}}</a>
+        </div>
+    </ng-template>
+</ngb-carousel>
+
+<div class="container my-3">
+    <div class="row">
+        <div class="col-md-6 my-3" *ngFor="let content of portfolio; let i=index">
+            <div class="card">
+                <div class="hovereffect">
+                    <img class="img-responsive" [src]="content.urlImage" alt="">
+                    <a href="{{content.urlWebsite}}">
+                        <div class="overlay">
+                            <p>See Website</p>
+                            <!-- <h2 class="p-5">
+                  <a href="{{content.urlWebsite}}">Click Here</a>
+                </h2> -->
+                        </div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <a href="{{content.urlWebsite}}">
+                        <h4 class="card-title">{{content.title}}</h4>
+                    </a>
+                    <p class="card-text">{{content.desc}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- LightWidget WIDGET -->
+<iframe src="//lightwidget.com/widgets/d9449587c23059f4bd22531afa7567c8.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
